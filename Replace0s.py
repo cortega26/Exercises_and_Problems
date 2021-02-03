@@ -1,7 +1,7 @@
-#Replace all 0's with 5's for a given integer
-#Practice problem from geeksforgeeks.org
+#Replace all 0's with 5 for a given integer
+#Practice problem for geeksforgeeks.org
 
-def ConvertFive(n):
+def convertFive(n):
     cont=0
     a=str(n)
     c=len(a)
@@ -15,8 +15,14 @@ def ConvertFive(n):
         else:
             pass
         nf=nf+b*10**(lugar)
-    print("initial number is: ",n)
-    print("final number is: ",nf)
-    
-n=int(input("insert number: "))
-ConvertFive(n)
+    #print("initial number is: ",n)
+    #print("final number is: ",nf)
+    n=nf
+    return n
+
+
+if __name__=='__main__':
+    t=int(input("t: "))
+    for i in range (t):
+        n=int(input("n: "))
+        print(convertFive(n))
