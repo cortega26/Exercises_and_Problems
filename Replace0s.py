@@ -1,5 +1,5 @@
-#Replace all 0's with 5 for a given integer
-#Practice problem for geeksforgeeks.org
+#Replace all 0's with 5's for a given integer
+#Practice problem from geeksforgeeks.org
 
 def ConvertFive(n):
     cont=0
