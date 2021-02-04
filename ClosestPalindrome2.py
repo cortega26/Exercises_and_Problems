@@ -13,14 +13,11 @@ def convertNumIntoString(N):
 
 def ClosestPalindrome(N):
     change=-1
-    #counter=0 (in case the original input is Palindrome and you need the next one)
     for i in range (N):        
-        if Palindrome(convertNumIntoString(N)) == True:
+        if Palindrome(convertNumIntoString(N)) == True: 
             return N
             break
         else:
-            #counter=1
-            #print(N)
             N=N+change
             if change > 0:
                 change+=1
