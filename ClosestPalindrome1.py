@@ -1,16 +1,12 @@
-import time
-start_time = time.time()
 
 def Palindrome(N):
-    N=int(str(N)[::-1])
-    return N            
+    return int(str(N)[::-1])            
 
 def ClosestPalindrome(N):
     change=-1
     for i in range (N+1):
         if int(Palindrome(N)) == N:
             return N
-            break
         else:
             N=N+change
             if change > 0:
@@ -19,7 +15,9 @@ def ClosestPalindrome(N):
             else:
                 change-=1
                 change=-change
-
+               
+import time
+start_time = time.time()
 #T=int(input())
 T=1
 for i in range(T):
