@@ -95,7 +95,6 @@ def ClosestPalindrome(N):
     for i in range (N):    
         if Palindrome(convertNumIntoString(N)) == True:
             return N
-            break
         else:
             N=N+change
             if change > 0:
