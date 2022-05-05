@@ -2,8 +2,6 @@
 #Practice problem for geeksforgeeks.org
 
 
-#Convert all 0's to 5's in a given integer
-
 def convert(n):
     new = []
     for i in str(n):
