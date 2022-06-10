@@ -6,14 +6,14 @@
 
 
 def find(arr, n, x):
-    flag1 = True
+    flag = True
     for idx, elem in enumerate(arr):
         if elem == x:
-            if flag1:
+            if flag:
                 minin = idx
-                flag1 = False
-            if flag1 == False and elem == x:
+                flag = False
+            if flag == False and elem == x:
                 maxin = idx
-    if flag1:
+    if flag:
         return -1, -1
     return minin, maxin
