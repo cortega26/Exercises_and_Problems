@@ -1,4 +1,6 @@
-def nearestPalindromic(n: str):
+# Source: https://leetcode.com/problems/find-the-closest-palindrome/
+
+def nearest_palindromic(n: str):
     """
     Given a string n representing an integer, return the closest integer 
     (not including itself), which is a palindrome. If there is a tie, 
@@ -43,3 +45,6 @@ def nearestPalindromic(n: str):
         return str(n - min_diff)
     else:
         return str(n + min_diff)
+
+if __name__ == "__main__":
+    nearest_palindromic('1234567890')
