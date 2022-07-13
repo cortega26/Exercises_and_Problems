@@ -1,32 +1,17 @@
-#Replace all 0's with 5 for a given integer
-#Practice problem for geeksforgeeks.org
+# https://practice.geeksforgeeks.org/problems/replace-all-0-with-5-in-an-input-integer/1/
 
 
 def convert(n):
-    new = []
+    """
+    Given a number n, this script will replace all 0's with 5's
+    """
+    
+    new = ""
     for i in str(n):
-        if i == '0':
-            new.append('5')
-        else:
-            new.append(i)
-    return int(''.join(new))
+        if i == '0': new += '5'
+        else: new += i
+    return int(new)
 
 
 if __name__=='__main__':
-    print("Do you want to include leading zeros (if exist)?")
-    answer = input()
-    if answer.upper() == "YES" or answer.upper() == "Y":
-        n = str(input("What in the number? "))
-        try:
-            a = int(n)
-            print(convert(n))
-        except:
-            print("Not a number. Program terminated.")
-    elif answer.upper() == "NO" or answer.upper() == "N":
-        try:
-            n = int(input("What in the number? "))
-            print(convert(n))
-        except:
-            print("Not a number. Program terminated.")
-    else:
-        print("Invalid answer. Program terminated.")
+    convert(34892034890)
