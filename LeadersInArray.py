@@ -1,13 +1,21 @@
-# Given an array A of positive integers. Your task is to find the leaders in the array.
-# An element of array is leader if it is greater than or equal to all the elements to
-# its right side. The rightmost element is always a leader. 
+# https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1
 
-def leaders(A, N):
+def leaders(arr, n):
+    """
+    Find the leaders in the array
+    An element of array is leader if it is greater than or equal to all the 
+    elements to its right side. The rightmost element is always a leader. 
+    """
+    
+    arr = arr[::-1]
     sol = []
-    max = 0
-    for i in reversed(A):
-        if i > max:
+    high = -float("Inf")
+    for i in arr:
+        if i >= high:
             sol.append(i)
-            max = i    
-    sol = sol[::-1]
-    return sol
+            high = i    
+    return sol[::-1]
+
+if __name__ == "__main__":
+    leaders([1,5,2,8,0,4,3,-2], 8)
+
