@@ -9,10 +9,13 @@ def maxSubArraySum(arr, N):
     
     max_sum = 0
     current_sum = 0
-    for i in arr:
-        current_sum += i
+    for integer in arr:
+        current_sum += integer
         if current_sum > max_sum:
             max_sum = current_sum
         elif current_sum < 0:
             current_sum = 0
     return max_sum
+
+if __name__ == "__main__":
+    maxSubArraySum([1,-2,3,5,6,-2,4,-4,0],9)
