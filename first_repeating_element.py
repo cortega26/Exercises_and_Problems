@@ -2,7 +2,6 @@
 # The element should occurs more than once and the index of its
 # first occurrence should be the smallest.
 
-
 def firstRepeated(arr, n):
     mp = {}
     for i in range(n):
@@ -15,3 +14,6 @@ def firstRepeated(arr, n):
         if mp[arr[i]] >= 2:
             return i
     return -1
+
+if __name__ == "__main__":
+    firstRepeated(arr, n)
