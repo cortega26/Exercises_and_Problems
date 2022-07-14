@@ -1,8 +1,10 @@
-# Given an array of N integers, and an integer K, find the number of
-# pairs of elements in the array whose sum is equal to K.
-# Expected Time Complexity: O(n)
-
-def getPairsCount(self, arr, n, k):
+def getPairsCount(arr, n, k):
+    """
+    Given an array of N integers, and an integer K, find 
+    the number of pairs of elements in the array whose sum 
+    is equal to K. Expected Time Complexity: O(n)
+    """
+    
     counter = 0
     dict_list = {}
     for i in range(n):
