@@ -2,9 +2,7 @@
 
 
 def convert(n):
-    """
-    Given a number n, this script will replace all 0's with 5's
-    """
+    """Given a integer n, replace all 0's with 5's"""
     
     new = ""
     for i in str(n):
