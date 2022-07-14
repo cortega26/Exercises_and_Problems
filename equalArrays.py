@@ -21,8 +21,7 @@ def check(A, B, N):
         if j in dict_b:
             dict_b[j] += 1
         else:
-            dict_b[j] = 1
-                
+            dict_b[j] = 1            
     return dict_a == dict_b
 
 if __name__ == "__main__":
