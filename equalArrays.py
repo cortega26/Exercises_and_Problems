@@ -23,10 +23,7 @@ def check(A, B, N):
         else:
             dict_b[j] = 1
                 
-    if dict_a == dict_b:
-        return 1
-    else:
-        return 0
+    return dict_a == dict_b
 
 if __name__ == "__main__":
     check([1, 2, 6, 5, 4, 4],[4, 5, 2, 1, 6, 4], 6)
