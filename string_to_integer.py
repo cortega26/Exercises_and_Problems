@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/string-to-integer-atoi/
 
-
 def myAtoi(s):
     """
     The algorithm for myAtoi(string s) is as follows:
-
     1. Read in and ignore any leading whitespace.
     2. Check if the next character (if not already at the end of the 
     string) is '-' or '+'. Read this character in if it is either. 
@@ -29,11 +27,9 @@ def myAtoi(s):
         if i == ' ' and sol == '': pass
         elif i in signs and sol == '': sol += i
         elif i in numbers: sol += i
-        else: break
-        
+        else: break       
     if sol == '' or sol in signs:
         return 0
-      
     sol = int(sol)
     if sol < -1 * (2**31):
         return -1 * (2**31)
@@ -41,7 +37,6 @@ def myAtoi(s):
         return (2**31) - 1
     else:
         return sol
-      
-      
+        
 if __name__ == "__main__":
     myAtoi('   -42car aoo')
