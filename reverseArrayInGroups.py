@@ -5,7 +5,6 @@ def reverseInGroups(arr, N, K):
     Given an array arr[] of positive integers of size N. Reverse every 
     sub-array group of size K.
     """
-  
     subs = N // K
     if N % K != 0:
         subs += 1
