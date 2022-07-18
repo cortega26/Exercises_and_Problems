@@ -14,4 +14,4 @@ def reverseInGroups(arr, N, K):
     return solution
   
 if __name__ == "__main__":
-  reverseInGroups([1,2,3,4,5,6,7,8,9,10],10,3)
+    reverseInGroups([1,2,3,4,5,6,7,8,9,10],10,3)
